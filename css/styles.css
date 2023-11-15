@@ -8,6 +8,11 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
 ul,
 ol {
   margin-top: 0;
@@ -54,12 +59,79 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+/*  */
+.menu-list {
+  display: none;
+}
+.address-navigation {
+  display: none;
+}
+.logotype {
+  color: var(--IRIS, #4d5ae5);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.16; /* 116.667% */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+span {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.16; /* 116.667% */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--NAVY-BLUE, #2e2f42);
+}
+.mobile-open-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header {
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999999999;
+  background-color: #fff;
+}
+.mobile-menu-close-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+.mobile-menu-container {
+  position: relative;
+}
+
+/*  */
+
 /* MEDIA */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
   .menu-list {
+    display: flex;
+  }
+  .address-navigation {
     display: flex;
   }
 }
@@ -69,13 +141,6 @@ button {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
   }
 }
 /*  ========================Mobile Header ===============*/
-.menu-list {
-  display: none;
-}
-.address-navigation {
-  display: none;
-}
