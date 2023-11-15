@@ -59,6 +59,9 @@ button {
   .container {
     max-width: 768px;
   }
+  .menu-list {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -66,5 +69,13 @@ button {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
   }
+}
+/*  ========================Mobile Header ===============*/
+.menu-list {
+  display: none;
+}
+.address-navigation {
+  display: none;
 }
