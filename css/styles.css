@@ -338,8 +338,31 @@ span {
   font-size: 16px;
   letter-spacing: 0.04em;
 }
-/*======================================================  */
 
+/*======================================================  */
+/* =====================Movbile modal burger========================== */
+.mobile-modal-burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 99999999999999999;
+}
+.mobile-menu-burger-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+.mobile-modal-burger-container {
+  position: relative;
+}
+/* ================================================== */
 /* MEDIA */
 @media screen and (min-width: 768px) {
   .container {
